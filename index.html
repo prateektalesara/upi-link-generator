@@ -127,8 +127,7 @@
             if (navigator.share) {
                 navigator.share({
                     title: 'UPI Payment Link',
-                    text: 'Pay using this UPI link:',
-                    url: generatedLink
+                    text: 'Pay using this UPI link: '+generatedLink,
                 }).then(() => {
                     console.log('Successful share');
                 }).catch((error) => {

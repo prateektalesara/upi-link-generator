@@ -132,7 +132,7 @@
                 }).then(() => {
                     console.log('Successful share');
                 }).catch((error) => {
-                    alert('Sharing is not supported on this browser {}', error);
+                    alert(error);
                 });
             } else {
                 alert('Sharing is not supported on this browser');

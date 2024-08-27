@@ -101,7 +101,7 @@
             const upiId = document.getElementById('upiId').value;
             const payeeName = document.getElementById('payeeName').value;
             const amount = document.getElementById('amount').value;
-            if (upiId && payeeName && amount && amount > 0) {
+            if (upiId && amount && amount > 0) {
                 const upiLink = `upi://pay?pa=${upiId}&pn=${encodeURIComponent(payeeName)}&am=${amount}&cu=INR`;
                 document.getElementById('generatedLink').value = upiLink;
                 document.getElementById('outputSection').style.display = 'block';
